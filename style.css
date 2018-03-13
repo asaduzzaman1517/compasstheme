@@ -1,0 +1,129 @@
+/* custom-css */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.demo-area {
+	background: url('images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.demo-gradient {
+	padding: 400px 0;
+	background: linear-gradient(rgba(79,172,254,.9),rgba(0,242,254,.9));
+}
+.main-content {
+	color: #fff;
+	text-align: center;
+}
+.main-content h1 {
+	margin: 0;
+	font-size: 48px;
+}
+.main-content hr {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 1px solid #fff;
+	width: 390px;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.main-content p {
+	margin: 0;
+	font-size: 24px;
+	font-style: italic;
+	letter-spacing: 13px;
+}
+.social-link {
+	margin: 50px 0;
+}
+.social-link li {
+	display: inline;
+	margin: 0 10px;
+}
+.social-link li a i {
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	padding: 15px;
+	display: inline-block;
+	font-size: 20px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	transition: .3s;
+}
+.social-link .fa-facebook:hover {
+	background: #4e71a8;
+	border: 1px solid transparent;
+}
+.social-link .fa-twitter:hover {
+	background: #55acee;
+	border: 1px solid transparent;
+}
+.coming-soon span {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* responsive */
+
+/*-- tablet-layout-768-px --*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.demo-gradient {
+		padding: 370px 0;
+	}
+}
+
+/*-- mobile-layout --*/
+@media only screen and (max-width: 767px) {
+	.demo-gradient {
+		padding: 220px 0;
+	}
+	.main-content h1 {
+		font-size: 36px;
+	}
+	.main-content hr {
+		width: 300px;
+	}
+	.main-content p {
+		font-size: 18px;
+		letter-spacing: 10px;
+	}
+	.social-link {
+		margin: 40px 0;
+	}
+	.social-link li {
+		margin: 0 6px;
+	}
+	.social-link li a i {
+		padding: 10px;
+		font-size: 16px;
+		height: 16px;
+		width: 16px;
+	}
+	.social-link .fa-facebook:hover,
+	.social-link .fa-twitter:hover {
+		background: transparent;
+		border: 1px solid #fff;
+	}
+	.coming-soon span {
+		font-size: 18px;
+	}
+}
